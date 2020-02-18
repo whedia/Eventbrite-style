@@ -64,3 +64,9 @@ gem 'table_print'
 gem 'faker'
 gem "letter_opener", :group => :development
 gem 'dotenv-rails'
+gem 'devise'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
