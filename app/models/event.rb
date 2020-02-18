@@ -13,7 +13,7 @@ class Event < ApplicationRecord
 
   validates :location, presence: true
 
-  has_many :users, :through: :attendances
+  has_many :users, through: :attendances
 
   has_many :attendances
 
