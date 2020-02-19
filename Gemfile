@@ -65,6 +65,7 @@ gem 'faker'
 gem "letter_opener", :group => :development
 gem 'dotenv-rails'
 gem 'devise'
+gem 'stripe'
 
 group :development do
   gem "better_errors"
