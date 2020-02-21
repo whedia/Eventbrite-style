@@ -1,10 +1,19 @@
 <div class="jumbotron">
   <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">Bienvenue sur le site de réservation d'évenement by Hedia Wejdi him-self.</p>
+  <p class="lead">Bienvenue sur le site de réservation d'évenement by Hedia Wejdi him-self and jeremy him-self</p>
   <hr class="my-4">
   <p>Veuillez vous inscrir pour acceder à toutes les fonctionnalités du site : </p>
   <p class="lead">
 
      <a class="btn btn-primary btn-lg" <%= link_to "Sign up", new_user_registration_path %></a>
   </p>
+  
 </div>
+
+<% if flash[:success] == true %>
+
+<div class="alert alert-success" role="alert">
+       <p class="text-center"> Your Event have been created !</p>
+    </div>
+
+    <% end %>
